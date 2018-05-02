@@ -32,6 +32,9 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
+import com.example.android.bluetoothlegatt.aws.DataManager;
+import com.example.android.bluetoothlegatt.aws.DataModel;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -148,9 +151,16 @@ public class BluetoothLeService extends Service {
                     stringBuilder.append(String.format("%02X ", byteChar));
                 intent.putExtra(EXTRA_DATA, new String(data) + "\n" + stringBuilder.toString());
             }
+
+            if(!AppManager.testOnMac){
+                DataManager.sendDataToAWS(data);
+            }
+
         }
         sendBroadcast(intent);
     }
+
+
 
     public class LocalBinder extends Binder {
         BluetoothLeService getService() {
