@@ -63,7 +63,7 @@ public class DataManager {
         return dm;
     }
 
-    static String getFormattedData(byte[] rawData){
+    public static String getFormattedData(byte[] rawData){
         StringBuffer sb = new StringBuffer("");
         for(int i=0; i<rawData.length; i++){
             int curr = rawData[i];
