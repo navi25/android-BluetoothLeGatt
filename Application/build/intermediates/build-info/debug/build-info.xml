@@ -6,13 +6,13 @@
     density="xhdpi"
     format="10"
     plugin-version="3.1.0"
-    timestamp="1525414175776"
+    timestamp="1525415106044"
     token="6168163596211997735"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="438" />
+        duration="392" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -21,7 +21,7 @@
         duration="21" />
     <task
         name="verifier"
-        duration="12" />
+        duration="6" />
 
     <artifact
         location="/Users/navi/AndroidStudioProjects/android-BluetoothLeGatt/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1525414175776"
+        timestamp="1525415106044"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/navi/AndroidStudioProjects/android-BluetoothLeGatt/Application/build/intermediates/split-apk/debug/slices/slice_1.apk"

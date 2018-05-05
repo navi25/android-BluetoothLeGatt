@@ -162,6 +162,7 @@ public class BluetoothLeService extends Service {
 //            }
 
         }
+        Log.d(TAG+" Data Values",characteristic.getStringValue(0));
         sendBroadcast(intent);
     }
 
